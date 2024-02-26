@@ -1,2 +1,2 @@
-# Calculadora---JS
+# Calculadora JS
 Uma calculadora feita em JavaScript
