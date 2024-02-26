@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="calculadora">
-        <div class="mostruario"></div>
+        <header class="mostruario">
+            <span class="resultado" id="resultado"></span>
+        </header>
         <div class="box_inputs">
             <div class="numbers">
-                <ul class="lista_numeros">
+                <ul class="lista_numeros" style="list-style: none;">
                     <li></li>
                     <li></li>
                     <li></li>
@@ -22,8 +25,8 @@
                     <li></li>
                 </ul>
             </div>
-            <div class="operations">
-                <ul class="lista_operadores">
+            <aside class="operations">
+                <ul class="lista_operadores" style="list-style: none;">
                     <li></li>
                     <li></li>
                     <li></li>
@@ -33,7 +36,7 @@
                     <li></li>
                     <li></li>
                 </ul>
-            </div>
+            </aside>
         </div>
     </div>
 </body>
