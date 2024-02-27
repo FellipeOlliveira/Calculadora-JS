@@ -1,15 +1,27 @@
-const mostruario = document.getElementById('resultado')
+
+const calculadora = (() => {
+    let mostruario = document.getElementById('resultado')
+
+    reset = () => mostruario.innerHTML = ''
+    setMostruario = (valor) => mostruario.innerHTML += valor
+    getMostruario = () => mostruario.innerHTML
+    resultadoFinal = (valor) => mostruario.innerHTML = valor
+    
+    return { getMostruario, setMostruario, reset , resultadoFinal}
+})()
 
 
 const escrever = (number) => {
-    mostruario.innerHTML += number
+    calculadora.setMostruario(number)
 }
 
 const calcular = () => {
-    let macaco = mostruario.innerHTML
-    let calculo = eval(macaco)
-    console.log(mostruario.innerHTML)
-    console.log(calculo)
+    let expression = calculadora.getMostruario()
+    let calculo = eval(espression)
+    calculadora.reset()
+    calculadora.resultadoFinal(calculo)
+}
 
-    mostruario.innerHTML = calculo
+const resetar = () => {
+    calculadora.reset()
 }
