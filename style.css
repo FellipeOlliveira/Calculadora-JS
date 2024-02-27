@@ -16,7 +16,11 @@ html {
     margin-left: 10%;
     height: 10rem;
     width: 80%;
+    text-align: end;
+}
 
+.resultado {
+    font-size: 8rem;
 }
 
 .box_inputs {
