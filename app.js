@@ -17,7 +17,7 @@ const escrever = (number) => {
 
 const calcular = () => {
     let expression = calculadora.getMostruario()
-    let calculo = eval(espression)
+    let calculo = eval(expression)
     calculadora.reset()
     calculadora.resultadoFinal(calculo)
 }
